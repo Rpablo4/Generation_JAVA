@@ -15,6 +15,12 @@ public class lista2 {
 			
 			switch(op) {
 				case 1:
+					/*
+					 *  Informar todos os números de 1000 a 1999 que quando divididos por 11
+						obtemos resto = 5. (FOR)
+					 * 
+					 */
+					
 					int resto, x, cont;
 					for(x=1000; x<=1999; x++) {
 						resto=(x%11);
@@ -25,6 +31,9 @@ public class lista2 {
 					break;
 					
 				case 2:
+					/*
+					 * Ler 10 números e imprimir quantos são pares e quantos são ímpares. (FOR)
+					 */
 					
 					int num, impares=0, pares=0;
 					
@@ -42,6 +51,11 @@ public class lista2 {
 					break;
 				
 				case 3:
+					/*
+					 * Solicitar a idade de várias pessoas e imprimir: Total de pessoas com menos de
+					21 anos. Total de pessoas com mais de 50 anos. O programa termina quando
+					idade for =-99. (WHILE)
+					 */
 					int idade=0, menos21=0, mais50=0;
 					x=0;
 					System.out.println("\n Digite -99 para ver o resultado.");
@@ -61,6 +75,20 @@ public class lista2 {
 					break;
 					
 				case 4:
+					/* 
+					 * Uma empresa desenvolveu uma pesquisa para saber as características
+						psicológicas dos indivíduos de uma região. Para tanto, a cada uma das pessoas
+						era perguntado: idade, sexo (1-feminino / 2-masculino / 3-Outros), e as opções
+						(1, se a pessoa era calma; 2, se a pessoa era nervosa e 3, se a pessoa era
+						agressiva). Pede-se para elaborar um sistema que permita ler os dados de 150
+						pessoas, calcule e mostre: (WHILE)
+						- número de pessoas calmas;
+						- número de mulheres nervosas;
+						- número de homens agressivos;
+						- número de outros calmos;
+						- número de pessoas nervosas com mais de 40 anos;
+						- número de pessoas calmas com menos de 18 anos.
+					 */
 					int nIndividuosCalmos=0, sexo=0, personality=0, nMulheresEstressadas=0, nHomensAgressivos=0, nNaoBinarioCalmxs=0, nervousAbove40=0, calmUnder20=0;
 					x=0;
 					while(x<=3) {
@@ -122,6 +150,11 @@ public class lista2 {
 					break;
 				
 				case 5:
+					/* 
+					 * Crie um programa que leia um número do teclado até que encontre um
+						número igual a zero. No final, mostre a soma dos números
+						digitados.(DO...WHILE)
+					 */
 					int total=0;
 					do {
 					System.out.println("\n Entre com um número do teclado: ");
@@ -132,6 +165,11 @@ public class lista2 {
 					break;
 				
 				case 6:
+					/*
+					 * Escrever um programa que receba vários números inteiros no teclado. E no
+						final imprimir a média dos números múltiplos de 3. Para sair digitar
+						0(zero).(DO...WHILE)
+					 */
 					float divPorTres=0, media;
 					x=0;
 					do {
