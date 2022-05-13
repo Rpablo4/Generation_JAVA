@@ -4,22 +4,27 @@ public class animais {
 	
 	//Declarando atributos
 	
+	private String especie;
 	private String nome;
 	private int idade;
-	private String som;
 
 	//criando construtor
-	public animais (String nome, int idade, String som) {
+	public animais ( String especie, String nome, int idade) {
 		super();
 		this.nome=nome;
 		this.idade=idade;
-		this.som=som;
+		this.especie=especie;
 	}
-
+	public void imprimirInfo() {
+		System.out.println("\n\t\t\tDados do animal:\nEspécie: "+getEspecie()+"Nome:"+getNome()+"\nIdade: "+getIdade()
+		+"\nEmite o som: "+emiteSom());
+	}
 	public String getNome() {
 		return nome;
 	}
-
+	public String getEspecie() {
+		return especie;
+	}
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
@@ -32,14 +37,9 @@ public class animais {
 		this.idade = idade;
 	}
 
-	public String getSom() {
-		return som;
+	public String emiteSom() {
+		return "Nenhum som definido";
 	}
-
-	public void setSom(String som) {
-		this.som = som;
-	}
-	
 	
 }
 
